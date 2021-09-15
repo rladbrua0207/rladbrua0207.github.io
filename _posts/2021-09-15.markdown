@@ -1,12 +1,16 @@
-```yml
 ---
 layout: post
-title:  "안녕하세요 !"
-summary: This is a sample post 2 by HG !
-author: SHG
-date: '2020-07-16 09:41:00 +0900'
-category: jekyll
-thumbnail: /assets/img/posts/code.jpg
----
-```
+title:  "2021-09-15 "
+date:   2021-09-15 21:04:18 +0900
+categories: categories/Web
+tags:
+  -test
+  -none
 
+---
+
+ 
+
+9시15분
+
+![20210911_234601](https://raw.githubusercontent.com/ShinDongHun1/image_repo/main/img/20210911_234601.png)
