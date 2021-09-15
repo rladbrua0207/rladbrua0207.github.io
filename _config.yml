@@ -295,3 +295,8 @@ defaults:
       value:
         layout : single
         author_profile: true
+        read_time: false
+        comments: false
+        share: true
+        related: false
+        slidebar_main: true
