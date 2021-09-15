@@ -3,7 +3,7 @@ title: "Algorithm"
 permalink: /categories/algorithm/
 layout: category
 author_profile: true
-taxonomy: category/algorithm
+taxonomy: algorithm
 ---
 
 category/algorithm
