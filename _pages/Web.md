@@ -3,8 +3,7 @@ title: "Web"
 permalink: /categories/web/
 layout: category
 author_profile: true
-taxonomy: Web
+taxonomy: categories/Web
 ---
 
-asdf
-
+9시 14분
