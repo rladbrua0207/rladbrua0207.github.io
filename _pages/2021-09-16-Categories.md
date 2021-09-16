@@ -1,8 +1,9 @@
 ---
 title: "Categories"
 permalink: /categories/
-layout: category
+layout: categories
 author_profile: true
-taxonomy: categories
+sidebar_main: true
+taxonomy: /categories/
 ---
 
