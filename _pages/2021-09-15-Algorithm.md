@@ -7,5 +7,3 @@ sidebar_main: true
 taxonomy: algorithm
 ---
 
-category/algorithm
-
