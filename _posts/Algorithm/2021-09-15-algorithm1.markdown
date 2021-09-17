@@ -32,9 +32,7 @@ tags:
 
 ## 풀이
 
-![KakaoTalk_20210917_172726190](../../../Desktop/Coding/사진/KakaoTalk_20210917_172726190.jpg)
-
-
+![KakaoTalk_20210917_172726190.jpg](https://github.com/rladbrua0207/rladbrua0207.github.io/blob/main/img/KakaoTalk_20210917_172726190.jpg?raw=true)
 
 ```java
 import java.io.BufferedReader;
