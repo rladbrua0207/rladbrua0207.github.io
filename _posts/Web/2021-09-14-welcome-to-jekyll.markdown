@@ -65,5 +65,22 @@ tags:
     <!-- Spoca Han Sans Neo: https://spoqa.github.io/spoqa-han-sans/ko-KR/ -->
     <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet" type="text/css" /> <!-- 웹 폰트-->
     <link rel="stylesheet" href="css/style.css" />
+
+<!-- CSS class naming (BEM 명명규칙: Block Element Modifier 순으로 작성)
+    __ : ~ 의 하위 요소를(속해있는) 나타냄
+    -- : ~ 의 상태를 나타냄(수정한다 라는 느낌)
+    - : 단어와 단어사이는 하이픈 (BlueBox X, blueBox X, blue_box X, blue-box O)
+    예를 들어, box-container__title--blue 와 같이 작성할 수 있음 (참고로만 알아두면 됨)
+    -->
+
+    <!-- 항상 화면을 100% 로 사용하면, 와이드 스크린에서 웹페이지가 기대와 달리 보일 수 있음 -->
+
+    <!-- header 에 상단 메뉴까지 넣을 예정 -->
+    <!-- 전체 layout 는 시맨틱 태그로 구성하고,
+      각 layout component 는 width를 100% 로 하되,
+      해당 component 에 들어가는 요소들은 특정 가로 사이즈 이상에서는 특정 사이즈로 가운데에 정렬되도록,
+      inner 클래스로 감싸주기로 함
+      각 하부 요소 배치를 위해서는 각 layout 별 container 로 정의해주기로 함
+    -->
 ```
 
