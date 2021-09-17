@@ -32,9 +32,7 @@ tags:
 
 ## 풀이
 
-![image-20210917173155708](../../../AppData/Roaming/Typora/typora-user-images/image-20210917173155708.png)
-
-
+![KakaoTalk_20210917_172726190](../../../Desktop/Coding/사진/KakaoTalk_20210917_172726190.jpg)
 
 ```java
 import java.io.BufferedReader;
