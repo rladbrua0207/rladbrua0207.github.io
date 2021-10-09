@@ -34,7 +34,7 @@ const hearts = names.map(addHeart);
 //순서대로 불러 그 함수의 반환값으로 새로운 배열 생성
 console.log(hearts);
 
-=>["nico *", "lynn *, "flynn *"]
+=>["nico *", "lynn *", "flynn *"]
    
 //요즘방식(Arrow Fucntion):
 //ex) 
@@ -43,7 +43,7 @@ const hearts = names.map(item => item + " *"); //implicit return
 //argument가 없거나 두 개 이상 있을경우 ( )괄호
 console.log(hearts);
 
-=>["nico *", "lynn *, "flynn *"]
+=>["nico *", "lynn *", "flynn *"]
 
 /**implicit return : 같은 줄에 뭘 적던지 간에 return
 괄호{}를 추가하게 되면 implicit return 사라짐(return 필요)=> 함수가 복잡 해 질때
