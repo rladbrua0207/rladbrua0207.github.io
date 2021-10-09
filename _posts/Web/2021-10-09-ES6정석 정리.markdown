@@ -29,7 +29,9 @@ const names = ["nico", "lynn", "flynn"];
 function addHeart(item) {
 	return item + " * "
 }
-const hearts = names.map(addHeart);// callback 함수를 각각의 요소에 대해 한번씩 순서대로 불러 그 함수의 반환값으로 새로운 배열 생성
+const hearts = names.map(addHeart);
+//callback 함수를 각각의 요소에 대해 한번씩 
+//순서대로 불러 그 함수의 반환값으로 새로운 배열 생성
 console.log(hearts);
 
 =>["nico *", "lynn *, "flynn *"]
@@ -129,13 +131,15 @@ const email = [
 ];
 
 const cleaned = emails.map(email => email.split("@")[0]);
+
+=> => ["nco", "naver", "lynn", "nico", "nico"]
 ```
 
 
 
 #### 6.object return
 
-object를 return 할 땐 중괄호{} 안에 소괄호() => objcet를 return하겠다 라는 말 함축
+object를 return 할 땐  소괄호() 안에 중괄호{}  ({})=> objcet를 return하겠다 라는 말 함축
 
 ```javascript
 //object return ex)
@@ -160,3 +164,4 @@ console.log(cleaned);
 3: {username: "nico", index 3}
 4: {username: "nico", index 4}
 ```
+
