@@ -10,7 +10,7 @@ tags:
 
 ### ES6개념, 유용한 메소드 정리
 
-#### 1.var
+#### 1. var
 
 var 절대사용 X, let 사용
 
@@ -20,7 +20,7 @@ var는 hoisting이슈, block scope 없음 function scope는 있음
 
 
 
-#### 2.Arrow Function 
+#### 2. Arrow Function 
 
 ```javascript
 //이전방식:
@@ -54,7 +54,7 @@ object를 return할땐 소괄호 안에 중괄호 ({})=> object를 return 하겠
 
 
 
-#### 3.array.prototype.find()
+#### 3. array.prototype.find()
 
 제공되는 테스트 조건을 만족하는 첫번째 엘리먼트 값 리턴
 
@@ -76,7 +76,7 @@ console.log(foundMail);
 
 
 
-#### 4.array.prototype.filter()
+#### 4. array.prototype.filter()
 
 제공된 함수의 조건을 만족한 모든 엘리먼트로 새로운 array 생성
 
@@ -98,7 +98,7 @@ console.log(noGmail);
 
 
 
-#### 5.array.prototype.forEach(), array.prototype.map()
+#### 5. array.prototype.forEach(), array.prototype.map()
 
 forEach(): 각 array의 엘리먼트 마다 제공된 함수 실행
 
@@ -138,7 +138,7 @@ const cleaned = emails.map(email => email.split("@")[0]);
 
 
 
-#### 6.object return
+#### 6. object return
 
 object를 return 할 땐  소괄호() 안에 중괄호{}  ({})=> objcet를 return하겠다 라는 말 함축
 
@@ -165,5 +165,27 @@ console.log(cleaned);
 2: {username: "lynn", index 2}
 3: {username: "nico", index 3}
 4: {username: "nico", index 4}
+```
+
+
+
+#### 7. Default Values
+
+함수에 argument값이 안들어갈때 default value 설정
+
+```javascript
+const DEFAULT = "lalalal";
+function sayHi(aName = DEFAULT){
+    return "Hello " + aName;
+} 
+console.log(sayHi());
+=> Hello lalalal
+
+//Arrow Function
+const DEFAULT = "lalalal";
+const sayHi = (aName = DEFAULT) => "hello " + aName;
+console.log(sayHi());
+
+=> Hello lalalal
 ```
 
