@@ -106,7 +106,8 @@ map(): callback 함수를 각각의 요소에 대해 한번씩 순서대로 불�
 
 ```javascript
 //@이전 내용만, 
-//forEach() ex)
+//forEach()
+//ex)
 const email = [
     "nco@no.com",
     "naver@google.com",
@@ -142,7 +143,8 @@ const cleaned = emails.map(email => email.split("@")[0]);
 object를 return 할 땐  소괄호() 안에 중괄호{}  ({})=> objcet를 return하겠다 라는 말 함축
 
 ```javascript
-//object return ex)
+//object return 
+//ex)
 const email = [
     "nco@no.com",
     "naver@google.com",
