@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f1def33959.js" crossorigin="anonymous"></script> <!-- 각종 아이콘 -->
+    <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet" type="text/css" />
+    <!-- 웹 폰트-->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="app_container">
+        <div class="calendar_container">
+            <div class="calendar_title"><i class="fas fa-chevron-circle-left calendar_prev_button"></i><span
+                    id="calendar_title"></span><i class="fas fa-chevron-circle-right calendar_next_button"></i></div>
+            <table id="calendar" class="calendar">
+                <tbody>
+                    <tr>
+                        <th class="sun">SUN</th>
+                        <th>MON</th>
+                        <th>TUE</th>
+                        <th>WED</th>
+                        <th>THU</th>
+                        <th>FRI</th>
+                        <th class="sat">SAT</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="todo_list_container">
+            <div class="todo_header">
+                <form id="login_form">Hello,<input type="text" id="login_input" placeholder="What's your name"  required/></form>
+                <div class="clock">00:00:00</div>
+            </div>
+            <div class="todo_selected_date"></div>
+            <form id="todo_form">
+                <input type="text" placeholder="What is your To-do"required></form>
+            <div class="todo_list_title">TO DO</div>
+            <ul class="todo_list">
+
+            </ul>
+            <div class="complete_todo_list_title">
+                DONE</div>
+            <ul class="complete_todo_list">
+            </ul>
+            <div id="weather">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <div class="d_day_calculator_container">
+        <form class ="d_day_form"><div>D-Day</div><input id="d_day_title" type="text" placeholder="title" required><br>
+            <input id="d_day_date" type="text" placeholder="dd" required>/<input id="d_day_month" type="text"
+                placeholder="mm" required>/<input id="d_day_year" type="text" placeholder="yyyy" required>
+            <input id="d_day_submit_button" type= "submit" value="add"></form>
+        <br>
+            <ul class="d_day_list">
+            </ul>
+    </div>
+    <script src="js/todolist.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/d-day.js"></script>
+</body>
+
+</html>

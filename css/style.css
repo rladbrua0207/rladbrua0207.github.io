@@ -1,0 +1,410 @@
+* {
+    box-sizing: border-box;
+    font-family: 'GowunBatang-Regular';
+}
+
+body {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@font-face {/*고운바탕Regular*/
+    font-family: 'GowunBatang-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.app_container {
+    width: 1000px;
+    height: 600px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+}
+
+/*------------------------------------------------------------------------ */
+.calendar_container {
+    width: 500px;
+    text-align: center;
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+
+.calendar_title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 67%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    /*color:azure;*/
+    color: ivory;
+}
+
+.calendar {
+    display: flex;
+    height: 260px;
+    width: 500px;
+    justify-content: space-around;
+}
+
+th {
+    width: 50px;
+    color: rgba(169, 169, 169, 1);
+}
+
+tr {
+    height: 50px;
+}
+
+td {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: rgba(169, 169, 169, 1);
+}
+
+td:hover {
+    color: ivory;
+}
+
+td.selected_date {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: darkolivegreen;
+}
+
+.calendar_next_button {
+    font-size: 1.5rem;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.calendar_prev_button {
+    font-size: 1.5rem;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.calendar_prev_button:hover {
+    cursor: pointer;
+    transition: transform 0.5s;
+    transform: translateX(-2px);
+}
+
+.calendar_next_button:hover {
+    cursor: pointer;
+    transition: transform 0.5s;
+    transform: translateX(2px);
+}
+
+.sun {
+    color: rgba(240, 128, 128, 1);
+}
+
+.sat {
+    color: rgba(100, 149, 237, 1);
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+.todo_list_container {
+    width: 430px;
+    height: 550px;
+    text-align: center;
+    border-radius: 16px;
+    background-color: rgba(230, 230, 230, 0.6);
+}
+
+.todo_header {
+    margin: 10px auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    opacity: 1;
+}
+
+#login_form {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#login_form input {
+    width: 170px;
+    background: rgba(230, 230, 230, 0);
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.384);
+    font-size: 1.1rem;
+    vertical-align: middle;
+    margin-bottom: 3px;
+}
+
+#login_form input:focus {
+    outline: unset;
+}
+
+.hidden {
+    display: none;
+}
+
+#todo_form input{
+    font-size: 1.0rem;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.384);
+    background: rgba(230, 230, 230,0);
+}
+
+#todo_form input:focus{
+    outline: unset;
+}
+
+.todo_selected_date{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.greeting {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 5px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.clock {
+    line-height: 37px;
+}
+
+/* ----------------------------------------------------------------- */
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.todo_list {
+    background-color: rgba(197, 197, 197,0.6);
+    margin: 0 auto ;
+    height: 150px;
+    width: 300px;
+    overflow: auto;
+    overflow-y: auto;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius: 10px;
+}
+
+.complete_todo_list{
+    background-color: rgba(197, 197, 197,0.6);
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius: 10px;
+    margin: 0 auto 10px auto;
+    height: 150px;
+    width: 300px;
+    overflow-y: auto;
+}
+.todo_list li{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.complete_todo_list li{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+
+
+.todo_list li :first-child{
+    width: 240px;
+    font-style: bold;
+    font-size: 1.1rem;
+}
+
+.complete_todo_list li :first-child{
+    width: 240px;
+    font-style: bold;
+    font-size: 1.1rem;
+}
+
+.todo_list_title{
+    margin-top: 10px;
+    background-color: rgba(197, 197, 197,0.6);
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom: rgba(230, 230, 230, 1);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+
+}
+
+
+.complete_todo_list_title{
+    background-color: rgba(197, 197, 197,0.6);
+    width: 300px;
+    margin-top: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom: rgba(230, 230, 230, 1);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+#deleteButton{
+    font-family: initial;
+}
+
+#deleteButton:hover{
+    cursor: pointer;
+}
+
+#completeButton:hover{
+    cursor: pointer;
+}
+
+#restoreButton:hover{
+    cursor: pointer;
+}
+
+.d_day_calculator_container{
+    width: 200px;
+    height: 600px;
+    border: 1px solid gray;
+    position: absolute;
+    border-bottom-left-radius: 16px;
+    border-top-left-radius: 16px;
+    top: 50%;
+    right: 0%;
+    transform: translate(0, -50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    overflow: auto;
+}
+
+.d_day_calculator_container form{
+    margin-top: 10px;
+    font-size: 1.1rem;
+    background-color: rgba(230, 230, 230, 0.6);
+    height: 100px;
+    width: 160px;
+    text-align: center;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.192);
+    border-style: solid;
+    
+}
+
+.d_day_calculator_container form div{
+    font-weight: bold;
+}
+
+#d_day_title{
+    width: 145px;
+    background: rgba(230, 230, 230, 0);
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.384);
+    font-size: 1.1rem;
+}
+
+#d_day_title:focus {
+    outline: unset;
+}
+
+#d_day_date{
+    background: rgba(230, 230, 230, 0);
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.384);
+    font-size: 0.8rem;
+    width: 25px;
+}
+
+#d_day_month{
+    background: rgba(230, 230, 230, 0);
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.384);
+    font-size: 0.8rem;
+    width: 25px;
+}
+
+#d_day_year{
+    width: 35px;
+    background: rgba(230, 230, 230, 0);
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.384);
+    font-size: 0.8rem;
+}
+
+
+.d_day_list li{
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.192);
+    border-style: solid;
+    background-color: rgba(230, 230, 230, 0.6);
+    height: 90px;
+    width: 160px;
+    line-height: 45px;
+    margin: 10px;
+}
+
+.d_day_list li :first-child{
+    border-bottom: rgba(0, 0, 0, 0.192);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    font-size: 1.2rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.d_day_list li :last-child{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#d_day_submit_button{
+    border: none;
+    background-color: rgba(230, 230, 230, 0.9);
+    border-radius: 10px;
+    font-family: 'GowunBatang-Regular';
+}
+
+#d_day_submit_button:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1400px) {
+    .d_day_calculator_container {
+      visibility: hidden;
+    }
+  }
+  
