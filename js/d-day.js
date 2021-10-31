@@ -28,9 +28,6 @@ function handleD_DaySubmit(event) {
       alert("숫자만 적으시오");
   }
   const today = new Date();
-  const rest_time =
-    parseInt((new Date(year, month, date) - today) / DIV_DAY) + 1;
-  //console.log(rest_time);
 
   const newD_DayObj = {
     title: title,
@@ -61,9 +58,12 @@ function paintD_Day(newD_DayObj) {
       (new Date(newD_DayObj.year, newD_DayObj.month, newD_DayObj.date) -
         today) /
         DIV_DAY
-    ) + 1;
-  title.innerText = `${newD_DayObj.title}`;
-  text.innerText = `D - ${rest_time}`;
+    );
+    title.innerText = `${newD_DayObj.title}`;
+    if(rest_time === 0){
+      text.innerText = `D - Day`;
+    }else{text.innerText = `D - ${rest_time}`;}
+  
   li.appendChild(title);
   li.appendChild(text);
   d_day_list.appendChild(li);
