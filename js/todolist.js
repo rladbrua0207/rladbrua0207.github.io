@@ -188,7 +188,7 @@ function completePaintTodo(completeNewTodo) {
 function completeDeleteTodo(event) {
   const li = event.target.parentElement.parentElement;
   li.remove();
-  console.log(li.id);
+  //console.log(li.id);
   complete_toDos = complete_toDos.filter((complete_todo) => complete_todo.id !== parseInt(li.id)); //li과 id가 다른거만 남긴다
   saveCompleteTodos();
 }

@@ -98,7 +98,7 @@ const tbody = document.querySelector("tbody");
 
 function removeSelected(){
     let prevSelectedDay = document.querySelector(".selected_date");
-    console.log(prevSelectedDay);
+    //console.log(prevSelectedDay);
     prevSelectedDay ? prevSelectedDay.classList.remove(SELECTED_DATE)
                     : null;
 }

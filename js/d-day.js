@@ -30,7 +30,7 @@ function handleD_DaySubmit(event) {
   const today = new Date();
   const rest_time =
     parseInt((new Date(year, month, date) - today) / DIV_DAY) + 1;
-  console.log(rest_time);
+  //console.log(rest_time);
 
   const newD_DayObj = {
     title: title,
@@ -85,7 +85,7 @@ setInterval(getTime,1000);*/
 
   if (savedD_Days !== null) {
     const parsedD_Days = JSON.parse(savedD_Days);
-    console.log(parsedD_Days);
+    //console.log(parsedD_Days);
     //문자열로 변환된 값을 다시 배열로
     d_days = parsedD_Days;
     d_days.forEach((element) => {
