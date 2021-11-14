@@ -1,4 +1,3 @@
-const URL_ROUTE= `https://rladbrua0207.github.io/WnC/`;
 
 $(document).ready(function () {
   const IMG_URL = "https://wnc-bucket.s3.ap-northeast-2.amazonaws.com/";

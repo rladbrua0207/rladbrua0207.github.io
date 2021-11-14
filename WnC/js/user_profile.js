@@ -3,7 +3,7 @@ $(document).ready(function(){
     console.log($('evaluate_select option:selected').val());
   })
 })
-const URL_ROUTE= `https://rladbrua0207.github.io/WnC/`;
+
 let name_value;
 let age_value;
 let img_value;

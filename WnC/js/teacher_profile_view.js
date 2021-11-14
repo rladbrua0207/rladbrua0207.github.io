@@ -5,7 +5,7 @@ const view_rating = document.querySelector("#view_rating");
 const view_img = document.querySelector("#view_img");
 
 const IMG_URL = "https://wnc-bucket.s3.ap-northeast-2.amazonaws.com/";
-const URL_ROUTE= `https://rladbrua0207.github.io/WnC/`;
+
 let view_name_value;
 let view_age_value;
 let view_img_value;

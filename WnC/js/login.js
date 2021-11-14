@@ -1,6 +1,4 @@
 
-const URL_ROUTE= `https://rladbrua0207.github.io/WnC/`;
-
 $(document).ready(function(){
   $('#admin_icon').click(function(){
     $(location).attr('href', "login_admin.html");

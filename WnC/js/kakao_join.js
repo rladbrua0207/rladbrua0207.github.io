@@ -1,4 +1,4 @@
-const URL_ROUTE= `https://rladbrua0207.github.io/WnC/`;
+
 
 const kakao_join_form = document.querySelector(".kakao_join_form");
 kakao_join_form.addEventListener("submit", postKakaoJoin);

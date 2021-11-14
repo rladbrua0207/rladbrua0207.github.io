@@ -1,4 +1,3 @@
-const URL_ROUTE= `https://rladbrua0207.github.io/WnC/`;
 
 const change_name_form = document.querySelector(".change_info_name");
 const change_password_form = document.querySelector(".change_info_password");

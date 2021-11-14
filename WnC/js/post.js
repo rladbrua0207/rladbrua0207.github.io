@@ -1,7 +1,7 @@
 
 // edior 타입은 두 개. 글 수정용 에디터 : "editEditor", 새 글 작성용 데이터 : "newEditor"
 // ---------- for postEditor.html ----------
-const URL_ROUTE= `https://rladbrua0207.github.io/WnC/`;
+
 var file = null;
 
 $(document).ready(function () {

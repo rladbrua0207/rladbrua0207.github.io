@@ -1,5 +1,3 @@
-const URL_ROUTE= `https://rladbrua0207.github.io/WnC/`;
-
 
 $(document).ready(function () {
 

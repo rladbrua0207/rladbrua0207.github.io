@@ -6,8 +6,6 @@ const join_img = document.querySelector("#join_img");
 const join_career = document.querySelector("#join_career");
 const join_form = document.querySelector(".join_form");
 
-const URL_ROUTE= `https://rladbrua0207.github.io/WnC/`;
-
 join_form.addEventListener("submit", postJoin);
 //lesson
 function postJoin(event){

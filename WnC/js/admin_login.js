@@ -3,7 +3,7 @@ const login_username = document.querySelector("#login_username");
 const login_password = document.querySelector("#login_password");
 const login_form = document.querySelector(".login_form");
 
-const URL_ROUTE= `https://rladbrua0207.github.io/WnC/`;
+
 
 function onLoginSubmit(event) {
   event.preventDefault();
