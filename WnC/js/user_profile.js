@@ -60,7 +60,7 @@ function init() {
   //localStorage.getItem("isTeacher");
 
   if (JSON.parse(localStorage.getItem("memberType")) === "STUDENT") {
-    fetch("http://219.255.114.140:8090/myInfo", {
+    fetch("https://cors-anywhere.herokuapp.com/http://219.255.114.140:8090/myInfo", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${JSON.parse(localStorage.getItem("token"))}`, //`Bearer ${JSON.parse(localStorage.getItem("token"))}`
@@ -92,7 +92,7 @@ function init() {
         )
       );
 
-    fetch("http://219.255.114.140:8090/myInfo/evaluation/teachers", {
+    fetch("https://cors-anywhere.herokuapp.com/http://219.255.114.140:8090/myInfo/evaluation/teachers", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${JSON.parse(localStorage.getItem("token"))}`, //`Bearer ${JSON.parse(localStorage.getItem("token"))}`
@@ -114,7 +114,7 @@ function init() {
         )
       );
   } else {
-    fetch("http://219.255.114.140:8090/myInfo", {
+    fetch("https://cors-anywhere.herokuapp.com/http://219.255.114.140:8090/myInfo", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${JSON.parse(localStorage.getItem("token"))}`, //`Bearer ${JSON.parse(localStorage.getItem("token"))}`
@@ -345,7 +345,7 @@ function postTeacherEvaluate(event) {
 
   console.log(input.value);
   console.log(select.value);
-  fetch(`http://219.255.114.140:8090/myInfo/evaluation/teachers/${className}`, {
+  fetch(`https://cors-anywhere.herokuapp.com/http://219.255.114.140:8090/myInfo/evaluation/teachers/${className}`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

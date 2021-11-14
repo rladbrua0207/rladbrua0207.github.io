@@ -23,7 +23,7 @@ function postChangeInfoName(event) {
 
 
   if (JSON.parse(localStorage.getItem("memberType")) === "STUDENT") {
-    fetch("http://219.255.114.140:8090/members/student", {
+    fetch("https://cors-anywhere.herokuapp.com/http://219.255.114.140:8090/members/student", {
       //선생일때
       //중복검사 후 보내기
       method: "PUT",
@@ -35,7 +35,7 @@ function postChangeInfoName(event) {
       .then((response) => response.json())
       .then((data) => console.log(data));
   } else {
-    fetch("http://219.255.114.140:8090/members/teacher", {
+    fetch("https://cors-anywhere.herokuapp.com/http://219.255.114.140:8090/members/teacher", {
       //선생일때
       //중복검사 후 보내기
       method: "PUT",
@@ -60,7 +60,7 @@ function postChangeInfoPassword(event) {
   if(JSON.parse(localStorage.getItem("memberType")) === "STUDENT"){
     if (new_password.value === check_new_password.value) {
 
-      fetch("http://219.255.114.140:8090/members/student", {
+      fetch("https://cors-anywhere.herokuapp.com/http://219.255.114.140:8090/members/student", {
         //선생일때
         //중복검사 후 보내기
         method: "PUT",
@@ -76,7 +76,7 @@ function postChangeInfoPassword(event) {
     if (new_password.value === check_new_password.value) {
 
   
-      fetch("http://219.255.114.140:8090/members/teacher", {
+      fetch("https://cors-anywhere.herokuapp.com/http://219.255.114.140:8090/members/teacher", {
         //선생일때
         //중복검사 후 보내기
         method: "PUT",
@@ -98,7 +98,7 @@ function postChangeInfoAge(event) {
   const formData = new FormData();
   formData.append("age",change_age.value);
   if (JSON.parse(localStorage.getItem("memberType")) === "STUDENT") {
-    fetch("http://219.255.114.140:8090/members/student", {
+    fetch("https://cors-anywhere.herokuapp.com/http://219.255.114.140:8090/members/student", {
       //학생일때
       method: "PUT",
       headers: {
@@ -109,7 +109,7 @@ function postChangeInfoAge(event) {
       .then((response) => response.json())
       .then((data) => console.log(data));
   } else {
-    fetch("http://219.255.114.140:8090/members/teacher", {
+    fetch("https://cors-anywhere.herokuapp.com/http://219.255.114.140:8090/members/teacher", {
       //선생일때
       method: "PUT",
       headers: {
@@ -128,7 +128,7 @@ function postChangeInfoImg(event) {
   formData.append("profileImg",change_img.files[0]);
 
   if (JSON.parse(localStorage.getItem("memberType")) === "STUDENT") {
-    fetch("http://219.255.114.140:8090/members/student", {
+    fetch("https://cors-anywhere.herokuapp.com/http://219.255.114.140:8090/members/student", {
       //학생일때
       headers: {
         Authorization: `Bearer ${JSON.parse(localStorage.getItem("token"))}`,
@@ -139,7 +139,7 @@ function postChangeInfoImg(event) {
       .then((response) => response.json())
       .then((data) => console.log(data));
   } else {
-    fetch("http://219.255.114.140:8090/members/teacher", {
+    fetch("https://cors-anywhere.herokuapp.com/http://219.255.114.140:8090/members/teacher", {
       headers: {
         Authorization: `Bearer ${JSON.parse(localStorage.getItem("token"))}`,
       },
@@ -155,7 +155,7 @@ function postChangeInfoCareer(event) {
   const formData = new FormData();
   formData.append("career",change_career.value);
 
-  fetch("http://219.255.114.140:8090/members/teacher", {
+  fetch("https://cors-anywhere.herokuapp.com/http://219.255.114.140:8090/members/teacher", {
     //선생일때
     method: "PUT",
     headers: {
@@ -212,7 +212,7 @@ function postWithdrawal(event) {
   const formData = new FormData();
   formData.append("password",current_password.value);
 
-  fetch("http://219.255.114.140:8090/members", {
+  fetch("https://cors-anywhere.herokuapp.com/http://219.255.114.140:8090/members", {
     //FormData로 보낼때 헤더설정 X
     method: "DELETE",
     headers: {

@@ -26,7 +26,7 @@ function postKakaoJoin(event) {
 
   console.dir(kakao_join_student.checked);
   if(kakao_join_student.checked){
-    fetch("http://219.255.114.140:8090/join/student/kakao", {
+    fetch("https://cors-anywhere.herokuapp.com/http://219.255.114.140:8090/join/student/kakao", {
         //학생 카카오
     
         method: "POST",
@@ -45,7 +45,7 @@ function postKakaoJoin(event) {
         })
         .then((data) => console.log(data));
   }else{
-    fetch("http://219.255.114.140:8090/join/teacher/kakao", {
+    fetch("https://cors-anywhere.herokuapp.com/http://219.255.114.140:8090/join/teacher/kakao", {
         //선생님 카카오
         method: "POST",
         headers: {

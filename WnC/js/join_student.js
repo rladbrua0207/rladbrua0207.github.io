@@ -22,7 +22,7 @@ function postJoin(event) {
     formData.append("profileImg", null);
   }
 
-  fetch("http://219.255.114.140:8090/join/student", {
+  fetch("https://cors-anywhere.herokuapp.com/http://219.255.114.140:8090/join/student", {
     //FormData로 보낼때 헤더설정 X
     method: "POST",
     body: formData,
@@ -40,7 +40,7 @@ function postJoin(event) {
 function usernameOverlapCheck() {
   //아이디중복확인
   const username = join_username.value;
-  fetch("http://219.255.114.140:8090/", {
+  fetch("https://cors-anywhere.herokuapp.com/http://219.255.114.140:8090/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
