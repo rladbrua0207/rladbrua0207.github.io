@@ -100,7 +100,7 @@ function onAlarmList(event) {
     alarm_list_container.removeChild(alarm_list_container.firstChild);
   }
   console.log("셀렉트 벨류", alarm_select.value);
-  fetch("http://219.255.114.140:8090/myInfo/myAlarms", {
+  fetch("https://cors-anywhere.herokuapp.com/http://219.255.114.140:8090/myInfo/myAlarms", {
     method: "GET",
     headers: {
       Authorization: `Bearer ${JSON.parse(localStorage.getItem("token"))}`, //`Bearer ${JSON.parse(localStorage.getItem("token"))}`
@@ -250,7 +250,7 @@ function getAlarmList(data) {
 function getApproveLesson(event) {//강의열람
   //강의수락
   const alarm_id = event.target.id;
-  fetch(`http://219.255.114.140:8090/myInfo/myAlarms/${alarm_id}`, {
+  fetch(`https://cors-anywhere.herokuapp.com/http://219.255.114.140:8090/myInfo/myAlarms/${alarm_id}`, {
     method: "GET",
     headers: {
       Authorization: `Bearer ${JSON.parse(localStorage.getItem("token"))}`, //`Bearer ${JSON.parse(localStorage.getItem("token"))}`
@@ -269,7 +269,7 @@ function postApproveLesson(data) {
   //강의수락요쳥보내기
 
   fetch(
-    `http://219.255.114.140:8090/lesson/${data.lessonId}/accept/${data.id}`,
+    `https://cors-anywhere.herokuapp.com/http://219.255.114.140:8090/lesson/${data.lessonId}/accept/${data.id}`,
     {
       method: "POST",
       headers: {
@@ -287,7 +287,7 @@ function postApproveLesson(data) {
 
 function getRefuseLesson(event) {
   const alarm_id = event.target.id;
-  fetch(`http://219.255.114.140:8090/myInfo/myAlarms/${alarm_id}`, {
+  fetch(`https://cors-anywhere.herokuapp.com/http://219.255.114.140:8090/myInfo/myAlarms/${alarm_id}`, {
     method: "GET",
     headers: {
       Authorization: `Bearer ${JSON.parse(localStorage.getItem("token"))}`, //`Bearer ${JSON.parse(localStorage.getItem("token"))}`
@@ -300,7 +300,7 @@ function getRefuseLesson(event) {
 function postRepuseLesson(data) {
   //강의거절 요청보내기
   fetch(
-    `http://219.255.114.140:8090/lesson/${data.lessonId}/cancel/${data.id}`,
+    `https://cors-anywhere.herokuapp.com/http://219.255.114.140:8090/lesson/${data.lessonId}/cancel/${data.id}`,
     {
       method: "POST",
       headers: {
