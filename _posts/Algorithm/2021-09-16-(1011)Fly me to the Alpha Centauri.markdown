@@ -4,8 +4,7 @@ excerpt: "Fly me to the Alpha Centauri"
 date:   2021-09-16 20:57:18 +0900
 categories: algorithm
 tags:
-  -algorithm
-  -baekjoon
+  baekjoon
 ---
 
 ## 문제

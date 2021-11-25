@@ -4,8 +4,7 @@ excerpt: "Variables, Arrow Function"
 date:   2021-10-09 23:04:18 +0900
 categories: web
 tags:
-  -web
-  -javascript
+  javascript
 ---
 
 ### ES6개념, 유용한 메소드 정리

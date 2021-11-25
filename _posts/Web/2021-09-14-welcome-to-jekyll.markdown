@@ -4,8 +4,7 @@ excerpt: "인프런 잔재미코딩"
 date:   2021-09-17 15:00:02 +0900
 categories: web
 tags:
-  -web
-  -인프런 잔재미코딩
+  inflearn
 ---
 
 ```html
